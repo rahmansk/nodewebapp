@@ -47,7 +47,7 @@ pipeline {
             scp -o StrictHostKeyChecking=no app.zip ubuntu@${APP_IP}:/home/ubuntu/
 
             echo '[+] Deploying on remote server...'
-            ssh -o StrictHostKeyChecking=no ubuntu@${APP_IP} << EOF
+            ssh -o StrictHostKeyChecking=no ubuntu@${APP_IP} << 'EOF'
               set -e
 
               echo '[+] Installing unzip and pm2 (if missing)...'
@@ -72,7 +72,7 @@ pipeline {
               pm2 start server.js --name node-auth-app
 
               echo '[+] Deployment completed successfully.'
-            EOF
+            'EOF'
           """
         }
       }
