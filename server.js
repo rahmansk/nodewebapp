@@ -40,7 +40,7 @@ app.get('/', (req, res) => {
     <body>
       <div class="card text-center">
         <h2>Hello, ${req.user.username}!</h2>
-        <p>Welcome to your dashboard buddy!</p>
+        <p>Welcome to your dashboard.</p>
         <a href="/logout" class="btn btn-danger">Logout</a>
       </div>
     </body>
