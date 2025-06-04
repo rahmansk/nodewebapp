@@ -72,7 +72,7 @@ pipeline {
               pm2 start server.js --name node-auth-app
 
               echo '[+] Deployment completed successfully.'
-            'EOF'
+            
           """
         }
       }
