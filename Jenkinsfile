@@ -6,7 +6,7 @@ pipeline {
   }
 
   environment {
-    APP_IP = '34.227.225.75'  // your EC2 IP
+    APP_IP = '18.206.157.37'  // your EC2 IP
   }
 
   triggers {
